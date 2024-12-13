@@ -1,5 +1,4 @@
 const { model, Schema } = require("mongoose");
-const Category = require("./Category");
 
 const RecipeSchema = new Schema({
   name: { type: String },
