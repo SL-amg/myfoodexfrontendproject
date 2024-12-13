@@ -26,3 +26,20 @@
 }
 
 /* Sample Container */
+.imagesReSize{
+height: 370px;
+width: 250px;
+padding: 7px;
+opacity: 1;
+transition: opacity 0.3s ease;
+}
+.imagesReSize:hover {
+    opacity: 0.5;
+}
+
+.sampleDiv {
+    display: flex;
+    justify-content: center;
+    background-color: #EDF2F4;
+}
+
