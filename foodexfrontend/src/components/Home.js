@@ -4,7 +4,6 @@ import Arabicpic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/
 import Desertspic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/Deserts.png";
 import Healthypic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/Healthy.png";
 import Kuwaitipic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/Kuwaiti.png";
-
 import asianfood from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/asianfood.avif";
 import desertfood from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/desertsfood.avif";
 import fastfood from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/fastfoodpic.jpg";
@@ -37,37 +36,50 @@ const Home = () => {
         <div className="categorySelector">
           <div className="oneCatigoreyDiv">
             <img src={asianfood} className="oneImageSizing" alt="Asian" />
-            <p>Asian</p>
+            <p className="categoryText">Asian</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={desertfood} className="oneImageSizing" alt="Asian" />
-            <p>Deserts</p>
+            <p className="categoryText">Deserts</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={fastfood} className="oneImageSizing" alt="Asian" />
-            <p>Fast Food</p>
+            <p className="categoryText">Fast Food</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={healthyfood} className="oneImageSizing" alt="Healthy" />
-            <p>Healthy</p>
+            <p className="categoryText">Healthy</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={kuwaitifood} className="oneImageSizing" alt="Kuwaiti" />
-            <p>Kuwaiti</p>
+            <p className="categoryText">Kuwaiti</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={arabicfood} className="oneImageSizing" alt="Arabic" />
-            <p>Arabic</p>
+            <p className="categoryText">Arabic</p>
           </div>
           <div className="oneCatigoreyDiv">
             <img src={turkishfood} className="oneImageSizing" alt="Turkish" />
-            <p>Turkish</p>
+            <p className="categoryText">Turkish</p>
           </div>
         </div>
         {/* View Recipies Page Sample Div */}
-        <div>
-          
+
+        <div className="centerViewRecipiesSample">
+        <button class="button-name" role="button">View Recipies</button>
         </div>
+
+        {/* Follow us Div */}
+        <div className="followusDivmain">
+Hellow
+<div>
+foolw us
+</div>
+<div>
+Signup for Email Updates
+</div>
+        </div>
+
       </div>
     </>
   );
