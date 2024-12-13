@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&display=swap');
+
+/* Entry Bar */
+.enteryBar{
+    display: flex;
+    background-color: #EDF2F4;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+}
+
+.ballet-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    padding-left: 10px ;
+    color: #2B2D42;
+}
+
+.textBar{
+    padding-top: 5px ;
+    color: #8E0118;
+    font-weight: bold;
+}
+
+/* Sample Container */

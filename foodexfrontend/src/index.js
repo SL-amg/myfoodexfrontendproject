@@ -11,7 +11,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
+import RegisterUser from "./components/RegisterUser";
+import LoginUser from "./components/LoginUser";
 
 //-----------
 
@@ -25,6 +26,26 @@ const router = createBrowserRouter([
       <NavBar />
       <Home />
       <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/Register",
+    element: (
+      <>
+        <NavBar />
+        <RegisterUser />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/Login",
+    element: (
+      <>
+        <NavBar />
+        <LoginUser />
+        <Footer />
       </>
     ),
   },

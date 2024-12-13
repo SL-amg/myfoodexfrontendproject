@@ -1,0 +1,10 @@
+/* Footeer css with Logo */
+.footerMain {
+    background-color: #2B2D42;
+    justify-content: center;
+    color: #EDF2F4;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* ---- The End of Footer Component CSS ---- */
