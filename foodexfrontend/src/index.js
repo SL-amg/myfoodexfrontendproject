@@ -12,6 +12,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import RegisterUser from "./components/RegisterUser";
 import LoginUser from "./components/LoginUser";
+import MainUserPage from './components/MainUserPage';
 
 //-----------
 
@@ -52,8 +53,7 @@ const router = createBrowserRouter([
     path: "/main",
     element: (
       <>
-        <NavBar />
-        <LoginUser />
+        <MainUserPage />
         <Footer />
       </>
     ),

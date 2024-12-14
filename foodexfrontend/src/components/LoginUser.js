@@ -13,7 +13,7 @@ const LoginUser = () => {
   const mutation = useMutation({
     mutationFn: (newUser) => Login(newUser),
     onSuccess: () => {
-      navigate("/account");
+      navigate("/xxx"); // to chage to main later
     },
   });
 
