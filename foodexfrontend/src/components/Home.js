@@ -6,6 +6,7 @@ import Healthypic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject
 import Kuwaitipic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject/foodexfrontend/src/images/Kuwaiti.png";
 import HomeCategoryList from "./HomeCategoryList";
 import FollowUsAndJoin from "./FollowUsAndJoin";
+import LoyalCustomers from "./LoyalCustomers";
 
 const Home = () => {
   return (
@@ -34,6 +35,8 @@ const Home = () => {
 
         {/* Follow us Div */}
         <FollowUsAndJoin />
+
+        <LoyalCustomers />
       </div>
     </>
   );

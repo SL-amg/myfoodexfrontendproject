@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&display=swap");
+
+
+.MianDivLoyal{
+    background-color: #EDF2F4 ;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.LoyalCustomerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1%;
+    background-color: #EDF2F4;
+    width: 850px;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.LoyalUserImage{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.LoyalReview{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    color: #2B2D42;
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+
+}
+
+.ballet-font-Loyal {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    padding-left: 10px;
+    color: #2b2d42;
+    font-size: 50px;
+  }
+  
+  .LoyaltextBar {
+    padding-top: 5px;
+    color: #8e0118;
+    font-weight: bold;
+    font-size: 30px;
+  }
