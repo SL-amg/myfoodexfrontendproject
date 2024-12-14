@@ -1,0 +1,35 @@
+/* Categories Container */
+.categoriesBar {
+    display: flex;
+    background-color: #edf2f4;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+  }
+  .categorySelector {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  
+  .oneCatigoreyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    padding: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .oneCatigoreyDiv:hover {
+    opacity: 0.5;
+  }
+  .oneImageSizing {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .categoryText{
+      font-weight: bold;
+  }

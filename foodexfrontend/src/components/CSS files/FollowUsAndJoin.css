@@ -1,0 +1,93 @@
+
+/* Follow us Container */
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Playwrite+CZ:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+TZ+Guides&display=swap");
+
+.followusDivmain{
+    background-color: #8E0118;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Social Media Div */
+.playwrite-cz-Follow{
+    font-family: "Playwrite CZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: 30px;
+      padding-right: 10px;
+      color:#EDF2F4 ;
+  }
+  
+.socialMediaDiv{
+    display: flex;
+    justify-content: center;
+padding: 35px;
+    align-items: center;
+}
+.socialMediaIcons{
+    height: 30px;
+    width: 30px;
+    background-color: #EDF2F4;
+    color: #8E0118;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Social Media Div Suscribe*/
+
+.mainSubscribeDiv{
+    padding-left: 70px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    min-height: 50px;
+    width: 300px;
+    padding: 0 1rem;
+    color: #8E0118;
+    font-size: 15px;
+    border: 1px solid #EDF2F4;
+    border-radius: 6px 0 0 6px;
+    background-color: #EDF2F4;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #2B2D42;
+    color: #EDF2F4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #8D99AE;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #8D99AE;
+    outline: none;
+  }
+
+  .ballet-fontSub {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style:normal;
+    font-size: La;
+    color: #EDF2F4;
+  }
+  
