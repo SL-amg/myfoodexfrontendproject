@@ -48,6 +48,16 @@ const router = createBrowserRouter([
       </>
     ),
   },
+  {
+    path: "/main",
+    element: (
+      <>
+        <NavBar />
+        <LoginUser />
+        <Footer />
+      </>
+    ),
+  },
 ]);
 
 

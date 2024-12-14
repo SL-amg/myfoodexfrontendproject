@@ -12,7 +12,7 @@ const RegisterUser = () => {
   const mutation = useMutation({
     mutationFn: (newUser) => registerAccount(newUser),
     onSuccess: () => {
-      navigate("/Login");
+      navigate("/main");
     },
   });
 
