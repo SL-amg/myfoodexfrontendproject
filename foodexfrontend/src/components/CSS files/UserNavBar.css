@@ -55,6 +55,7 @@ border-width: 1px;
     color: #EDF2F4;
     display: flex;
     align-items: center;
+    padding-right:15px ;
 }
 
 /* Account Bar selector */
