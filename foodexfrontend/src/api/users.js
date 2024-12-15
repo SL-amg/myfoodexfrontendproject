@@ -1,6 +1,6 @@
 import instance from "./index";
 
-
+//Users Hub-----------------------------------------------------
 // to register a new Account
 const registerAccount = async (userInfo) => {
     const response = await instance.post("/accounts", userInfo);
@@ -17,7 +17,7 @@ async function Login(userInfo) {
   return response;
 } // to check this page not working
 
-
+//Catgoires Hub-----------------------------------------------------
 //to get catogaries from the server
 async function getAllCatogaries() {
   const data = await instance.get("/categories");
@@ -25,6 +25,7 @@ async function getAllCatogaries() {
   return data;
 }
 
+//Recipies Hub -----------------------------------------------------
 //to get recipies from the server
 async function getAllRecipies() {
   const data = await instance.get("/recipes");
@@ -32,6 +33,8 @@ async function getAllRecipies() {
   return data;
 }
 
+
+//Ingredients Hub-----------------------------------------------------
 //to get all ingredients from the server
 async function getAllIngredients() {
   const data = await instance.get("/recipes");
