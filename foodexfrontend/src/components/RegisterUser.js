@@ -2,9 +2,8 @@ import React from 'react'
 import "../components/CSS files/RegisterUser.css";
 import { useMutation } from "@tanstack/react-query";
 import { Formik, Form, Field } from "formik";
-import {registerAccount} from "../api/users"
 import { NavLink, useNavigate } from "react-router-dom";
-
+import {registerAccount} from "../api/users"
 
 const RegisterUser = () => {
   const navigate = useNavigate();

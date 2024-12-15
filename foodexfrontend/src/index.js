@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import RegisterUser from "./components/RegisterUser";
 import LoginUser from "./components/LoginUser";
 import MainUserPage from './components/MainUserPage';
+import CategoryList from './components/CategoryList';
+import RecipyList from './components/RecipyList';
 
 //-----------
 
@@ -54,6 +56,24 @@ const router = createBrowserRouter([
     element: (
       <>
         <MainUserPage />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/categoriesList", // for testing
+    element: (
+      <>
+        <CategoryList />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/recipyList", // for testing
+    element: (
+      <>
+        <RecipyList />
         <Footer />
       </>
     ),
