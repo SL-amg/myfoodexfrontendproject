@@ -37,8 +37,8 @@ async function getAllRecipies() {
 //Ingredients Hub-----------------------------------------------------
 //to get all ingredients from the server
 async function getAllIngredients() {
-  const data = await instance.get("/recipes");
-  console.log(data, "recipies")
+  const data = await instance.get("/ingredients");
+  console.log(data, "ingredients")
   return data;
 }
 

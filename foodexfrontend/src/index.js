@@ -15,6 +15,7 @@ import LoginUser from "./components/LoginUser";
 import MainUserPage from './components/MainUserPage';
 import CategoryList from './components/CategoryList';
 import RecipyList from './components/RecipyList';
+import IngredientList from './components/IngredientList';
 
 //-----------
 
@@ -74,6 +75,15 @@ const router = createBrowserRouter([
     element: (
       <>
         <RecipyList />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/ingredientList", // for testing
+    element: (
+      <>
+        <IngredientList />
         <Footer />
       </>
     ),

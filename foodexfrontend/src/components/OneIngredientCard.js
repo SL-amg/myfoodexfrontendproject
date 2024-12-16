@@ -14,11 +14,11 @@ function OneIngredientCard({ ingredientcard, name, scale, amount, recipes,}) {
           {ingredientcard?.scale}
         </div>
         <div>
-          Recipy amount is
+        igredient amount is
           {ingredientcard?.amount}
         </div>
         <div>
-          Recipy recipies is
+        igredient recipies is
           {ingredientcard?.recipes}
         </div>
 
