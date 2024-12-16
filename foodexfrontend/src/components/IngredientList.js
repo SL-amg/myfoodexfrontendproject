@@ -3,7 +3,7 @@
 import React from 'react'
 import { useQuery } from "@tanstack/react-query";
 import { getAllIngredients } from '../api/users';
-import OneIngredientCard from './OneRecipyCard';
+import OneIngredientCard from './OneIngredientCard'
 
 const IngredientList = () => {
     const { data, isFetching, isSuccess, refetch } = useQuery({
