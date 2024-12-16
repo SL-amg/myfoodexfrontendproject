@@ -1,5 +1,5 @@
 import React from 'react'
-import "../components/CSS files/UserCategoryCard.css";
+import "../components/CSS files/CategoryCard.css";
 
 function OneCategoryCard({ categorycard, name, image }) {
     return (

@@ -16,6 +16,7 @@ import MainUserPage from './components/MainUserPage';
 import CategoryList from './components/CategoryList';
 import RecipyList from './components/RecipyList';
 import IngredientList from './components/IngredientList';
+import UsernameList from './components/UsernameList';
 
 //-----------
 
@@ -84,6 +85,15 @@ const router = createBrowserRouter([
     element: (
       <>
         <IngredientList />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/allusers", // for testing
+    element: (
+      <>
+        <UsernameList />
         <Footer />
       </>
     ),

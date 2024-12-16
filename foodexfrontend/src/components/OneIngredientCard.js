@@ -1,6 +1,7 @@
 //this is one ingredient card
 
 import React from 'react'
+import "../components/CSS files/ingredientcard.css"
 
 function OneIngredientCard({ ingredientcard, name, scale, amount, recipes,}) {
   return (

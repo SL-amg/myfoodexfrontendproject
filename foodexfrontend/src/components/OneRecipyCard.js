@@ -1,6 +1,7 @@
 //this is one recipy card
 
 import React from 'react'
+import "../components/CSS files/RecipyCard.css";
 
 function OneRecipyCard({ recipycard, name, image, nutritionFact, creater, category,}) {
   return (
