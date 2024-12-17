@@ -11,7 +11,7 @@ const RegisterUser = () => {
   const mutation = useMutation({
     mutationFn: (newUser) => registerAccount(newUser),
     onSuccess: () => {
-      navigate("/xxx"); //to change to main later
+      navigate("/main"); //to change to main later
     },
   });
 

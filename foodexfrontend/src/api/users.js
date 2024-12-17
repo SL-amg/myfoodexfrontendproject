@@ -10,7 +10,7 @@ async function getAllUsers() {
 
 // to register a new Account
 const registerAccount = async (userInfo) => {
-    const response = await instance.post("/accounts", userInfo);
+    const response = await instance.post("/accounts/signup", userInfo);
     localStorage.setItem("token", response.token);
     console.log("login data", response);
     return response;
@@ -18,7 +18,7 @@ const registerAccount = async (userInfo) => {
 
 // to Login to an Exisiting Account
 async function Login(userInfo) {
-  const response = await instance.put("/accounts", userInfo);
+  const response = await instance.post("/accounts/signin", userInfo);
   localStorage.setItem("token", response.token);
   console.log("login data", response);
   return response;
