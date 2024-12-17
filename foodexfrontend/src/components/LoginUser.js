@@ -40,7 +40,7 @@ const LoginUser = () => {
                 as="input"
                 name="username"
                 type="text"
-                placeholder="Username"
+                placeholder="Username (Case Sensative)"
                 className="barStyle"
               />
               <h4>Password</h4>
