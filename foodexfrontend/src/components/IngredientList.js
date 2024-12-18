@@ -4,6 +4,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getAllIngredients } from "../api/users";
 import OneIngredientCard from "./OneIngredientCard";
+import "../components/CSS files/IngredientCard.css";
 
 const IngredientList = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
@@ -22,7 +23,7 @@ const IngredientList = () => {
     />
   ));
 
-  return <div>{ingredientCardView}</div>;
+  return <div className="mainIngridentDiv">{ingredientCardView}</div>;
 };
 
 export default IngredientList;

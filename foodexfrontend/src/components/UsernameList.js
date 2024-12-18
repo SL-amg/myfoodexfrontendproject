@@ -4,6 +4,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import OneUserCard from "./OneUserCard";
 import { getAllUsers } from "../api/users";
+import "../components/CSS files/UserCard.css";
 
 const UsernameList = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
@@ -20,7 +21,7 @@ const UsernameList = () => {
     />
   ));
 
-  return <div>{usernameCardView}</div>;
+  return <div className="mainIngridentDiv">{usernameCardView}</div>;
 };
 
 export default UsernameList;

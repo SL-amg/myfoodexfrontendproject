@@ -16,7 +16,8 @@
   border-radius: 20px;
   text-align: center;
   margin: 30px;
-  padding: 20px;
+  padding: 10px;
+  height: 800px;
 }
 
 .recipyTextDiv{
@@ -36,3 +37,11 @@
   height: 75px;
   border-radius: 15px;
 }
+
+.mainRecipyDiv{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+ }

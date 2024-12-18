@@ -5,26 +5,26 @@ import "../components/CSS files/IngredientCard.css";
 
 function OneIngredientCard({ ingredientcard, name, scale, amount, recipes }) {
   return (
-    <div className="recipyDiv">
-      <div className="recipyAction">
+    <div className="ingredientDiv">
+      <div className="ingredientAction">
         <div>
-          <p className="recipyTextDiv">igredient Name is </p>
-          <h2 className="recipyTextresaltsDiv">{ingredientcard?.name} </h2>
+          <p className="integoryTextDiv">igredient Name is </p>
+          <h2 className="intgoryTextresaltsDiv">{ingredientcard?.name} </h2>
         </div>
 
         <div>
-          <p className="recipyTextDiv">igredient Scale is </p>
-          <h2 className="recipyTextresaltsDiv">{ingredientcard?.scale} </h2>
+          <p className="integoryTextDiv">igredient Scale is </p>
+          <h2 className="intgoryTextresaltsDiv">{ingredientcard?.scale} </h2>
         </div>
 
         <div>
-          <p className="recipyTextDiv"> igredient amount is </p>
-          <h2 className="recipyTextresaltsDiv">{ingredientcard?.amount} </h2>
+          <p className="integoryTextDiv"> igredient amount is </p>
+          <h2 className="intgoryTextresaltsDiv">{ingredientcard?.amount} </h2>
         </div>
 
         <div>
-          <p className="recipyTextDiv"> igredient recipies is</p>
-          <h2 className="recipyTextresaltsDiv">{ingredientcard?.recipes} </h2>
+          <p className="integoryTextDiv"> igredient recipies is</p>
+          <h2 className="intgoryTextresaltsDiv">{ingredientcard?.recipes} </h2>
         </div>
       </div>
     </div>

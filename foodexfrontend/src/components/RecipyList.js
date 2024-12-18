@@ -4,6 +4,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getAllRecipies } from "../api/users";
 import OneRecipyCard from "./OneRecipyCard";
+import "../components/CSS files/RecipyCard.css";
 
 const RecipyList = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
@@ -21,7 +22,7 @@ const RecipyList = () => {
     />
   ));
 
-  return <div>{recipyCardView}</div>;
+  return <div className="mainRecipyDiv">{recipyCardView}</div>;
 };
 
 export default RecipyList;

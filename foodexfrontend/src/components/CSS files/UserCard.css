@@ -1,11 +1,11 @@
-.recipyDiv {
+.userssDiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 25%;
   }
 
-  .recipyAction {
+  .userssAction {
     border: 2px;
     background: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
@@ -18,22 +18,30 @@
     padding: 20px;
   }
   
-  .recipyTextDiv{
+  .userssTextDiv{
     font-size: 25px;
     color: #415a77;
   }
 
-  .recipyTextresaltsDiv{
+  .userssTextresaltsDiv{
     font-size: 25px;
     color: #0a7732;
   }
 
-  .recipyImage{
+  .userssImage{
     justify-content: center;
     align-items: center;
     width: 75px;
     height: 75px;
     border-radius: 15px;
   }
+
+  .mainUserssDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+   }
   
   
