@@ -6,12 +6,12 @@ function OneCategoryCard({ categorycard, name, image, recipes }) {
     <div className="catigoryDiv">
       <div className="catigoryAction">
         <div>
-          <p className="catigoryTextDiv">Catigory Name is </p>
+          {/* <p className="catigoryTextDiv">Catigory Name is </p> */}
           <h2 className="catigoryTextresaltsDiv">{categorycard?.name}</h2>
         </div>
 
         <div>
-          <p className="catigoryTextDiv">category Image is </p>
+          {/* <p className="catigoryTextDiv">category Image is </p> */}
           <img
             className="recipyImage"
             src={
@@ -22,7 +22,7 @@ function OneCategoryCard({ categorycard, name, image, recipes }) {
         </div>
 
         <div>
-          <p className="catigoryTextDiv">Catigory Recipies are</p>
+          <p className="catigoryTextDiv">Recipies:</p>
           <div>
             <pre>{JSON.stringify(categorycard?.recipes, null, 2)}</pre>
           </div>

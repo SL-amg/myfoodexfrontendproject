@@ -11,13 +11,13 @@
   background: rgb(250, 250, 250);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   display: flex;
-  width: 300px;
+  width: 200px;
   flex-direction: column;
   border-radius: 20px;
   text-align: center;
   margin: 20px;
   padding: 10px;
-  height: 800px;
+  height: 300px;
 }
 
 .catigoryTextDiv{
