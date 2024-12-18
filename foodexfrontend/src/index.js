@@ -1,22 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 //----------- Components Import
 
 import Home from "./components/Home";
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import RegisterUser from "./components/RegisterUser";
 import LoginUser from "./components/LoginUser";
-import MainUserPage from './components/MainUserPage';
-import CategoryList from './components/CategoryList';
-import RecipyList from './components/RecipyList';
-import IngredientList from './components/IngredientList';
-import UsernameList from './components/UsernameList';
+import MainUserPage from "./components/MainUserPage";
+import CategoryList from "./components/CategoryList";
+import RecipyList from "./components/RecipyList";
+import IngredientList from "./components/IngredientList";
+import UsernameList from "./components/UsernameList";
+import UserRecipyList from "./components/UserRecipyList";
 
 //-----------
 
@@ -27,9 +28,9 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-      <NavBar />
-      <Home />
-      <Footer />
+        <NavBar />
+        <Home />
+        <Footer />
       </>
     ),
   },
@@ -98,8 +99,16 @@ const router = createBrowserRouter([
       </>
     ),
   },
+  {
+    path: "/test1", // for testing
+    element: (
+      <>
+        <UserRecipyList />
+        <Footer />
+      </>
+    ),
+  },
 ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

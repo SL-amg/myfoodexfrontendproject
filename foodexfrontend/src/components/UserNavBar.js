@@ -5,15 +5,24 @@ import { GiKnifeFork } from "react-icons/gi";
 import { TbMeat } from "react-icons/tb";
 import { MdOutlineSettings } from "react-icons/md";
 import { IoLogOut } from "react-icons/io5";
+import { NavLink, useNavigate } from "react-router-dom";
+// import { deleteToken } from "../api/storage";
 
-const Moudhi =
-  "https://home.joincoded.com/_next/image?url=https%3A%2F%2Flanding-storage.fra1.digitaloceanspaces.com%2FFrame_13_6e214d489a.jpg&w=1920&q=75";
-const Omar =
+
+const Omar = 
   "https://home.joincoded.com/_next/image?url=https%3A%2F%2Flanding-storage.fra1.digitaloceanspaces.com%2FFrame_5_bdb6d0aeb8.jpg&w=1920&q=75";
-const Abdullah =
-  "https://home.joincoded.com/_next/image?url=https%3A%2F%2Flanding-storage.fra1.digitaloceanspaces.com%2FFrame_4_a0dd99bc67.jpg&w=1920&q=75";
 
 const UserNavBar = () => {
+
+  const navigate = useNavigate();
+  
+  // const logout = () => {
+  //   deleteToken();
+  //   localStorage.removeItem("user");
+  //   navigate("/login");
+  // };
+
+
   return (
     <>
       <div className="mainSideBar">
@@ -43,7 +52,7 @@ const UserNavBar = () => {
           </div>
           <div className="eachIetmDiv">
             <IoLogOut className="sideBarIcons" />
-            Logout
+            {/* <button className="" onClick={logout}> Logout</button> */}
           </div>
         </div>
       </div>
