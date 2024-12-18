@@ -19,7 +19,7 @@ const UserRecipyList = () => {
   });
   
   const userRecipyCardView = data?.filter((recipycard) => recipycard?.name.includes(queryName))
-// .filter((recipycard) => recipycard?.category.includes(queryCategory))
+// .filter((recipycard) => recipycard?.category?.includes(queryCategory))
 .filter((recipycard) => recipycard?.creator?.name?.includes(queryCreator))
     .map((recipycard) => (
       <OneRecipyCard
@@ -50,7 +50,7 @@ const UserRecipyList = () => {
           <input
             type="Search"
             className="line"
-            placeholder="Search By Category"
+            placeholder="Search By Creator"
             aria-label="Search"
             aria-describedby="search-addon"
             onChange={(event) => setQueryCreator(event.target.value)} // created an onChange with input event that calles setQuery and gives it event.tagrt.value
@@ -60,7 +60,7 @@ const UserRecipyList = () => {
           <input
             type="Search"
             className="line"
-            placeholder="Search By Creator"
+            placeholder="Search By Catigory"
             aria-label="Search"
             aria-describedby="search-addon"
             onChange={(event) => setQueryCategory(event.target.value)} // created an onChange with input event that calles setQuery and gives it event.tagrt.value
