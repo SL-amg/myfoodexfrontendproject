@@ -18,6 +18,7 @@ import RecipyList from "./components/RecipyList";
 import IngredientList from "./components/IngredientList";
 import UsernameList from "./components/UsernameList";
 import UserRecipyList from "./components/UserRecipyList";
+import UserIngredientList from "./components/UserIngredientList";
 
 //-----------
 
@@ -104,6 +105,15 @@ const router = createBrowserRouter([
     element: (
       <>
         <UserRecipyList />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/test2", // for testing
+    element: (
+      <>
+        <UserIngredientList />
         <Footer />
       </>
     ),
