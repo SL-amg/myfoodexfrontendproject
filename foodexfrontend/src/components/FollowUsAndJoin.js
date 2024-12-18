@@ -16,18 +16,18 @@ const FollowUsAndJoin = () => {
         </div>
 
         <div className="mainSubscribeDiv">
-            <h2 className="ballet-fontSub"> Subscribe for Updates</h2>
-        <div class="input-group">
-          <input
-            type="email"
-            class="input"
-            id="Email"
-            name="Email"
-            placeholder="Email Address"
-            autocomplete="off"
-          />
-          <input class="button--submit" value="Subscribe" type="submit" />
-        </div>
+          <h2 className="ballet-fontSub"> Subscribe for Updates</h2>
+          <div class="input-group">
+            <input
+              type="email"
+              class="input"
+              id="Email"
+              name="Email"
+              placeholder="Email Address"
+              autocomplete="off"
+            />
+            <input class="button--submit" value="Subscribe" type="submit" />
+          </div>
         </div>
       </div>
     </>

@@ -1,25 +1,35 @@
-import React from 'react'
+import React from "react";
 import "../components/CSS files/CategoryCard.css";
 
 function OneCategoryCard({ categorycard, name, image, recipes }) {
-    return (
-      <div className='catogaryOneItemDiv'>
+  return (
+    <div className="recipyDiv">
+      <div className="recipyAction">
         <div>
-          category Name is
-          {categorycard?.name}
-        </div>
-        <div>
-          category Image is
-          <img src={"https://react-bank-project.eapi.joincoded.com/" + categorycard?.image}/>
-     
-        </div>
-        <div>
-        <pre>{JSON.stringify(categorycard?.recipes, null, 2)}</pre>;
-     
+          <p className="recipyTextDiv">Catigory Name is </p>
+          <h2 className="recipyTextresaltsDiv">{categorycard?.name}</h2>
         </div>
 
+        <div>
+          <p className="recipyTextDiv">category Image is </p>
+          <img
+            className="recipyImage"
+            src={
+              "" +
+              categorycard?.image
+            }
+          />
+        </div>
+
+        <div>
+          <p className="recipyTextDiv">Catigory Recipies are</p>
+          <div>
+            <pre>{JSON.stringify(categorycard?.recipes, null, 2)}</pre>
+          </div>
+        </div>
       </div>
-    )
-  }
+    </div>
+  );
+}
 
-export default OneCategoryCard
+export default OneCategoryCard;

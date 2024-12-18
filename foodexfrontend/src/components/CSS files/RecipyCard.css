@@ -1,0 +1,38 @@
+* Users css */
+.recipyDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+}
+
+.recipyAction {
+  border: 2px;
+  background: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+}
+
+.recipyTextDiv{
+  font-size: 25px;
+  color: #415a77;
+}
+
+.recipyTextresaltsDiv{
+  font-size: 25px;
+  color: #0a7732;
+}
+
+.recipyImage{
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 15px;
+}

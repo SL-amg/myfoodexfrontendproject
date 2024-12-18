@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
-import image from '../images/tbkbank.png'
-import "../components/CSS files/NavBar.css"
+import image from "../images/tbkbank.png";
+import "../components/CSS files/NavBar.css";
 
 const NavBar = () => {
   return (
