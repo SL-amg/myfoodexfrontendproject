@@ -19,7 +19,7 @@ const MainUserPage = () => {
     <>
     <div className="fixmaindiv">
       <div>
-      <UserNavBar usernamecard={data?.username}  />
+      <UserNavBar account= {data} />
       </div>
       <div>
       <CategoryList />

@@ -13,7 +13,7 @@ import OneUserCard from "./OneUserCard";
 const Omar = 
   "https://home.joincoded.com/_next/image?url=https%3A%2F%2Flanding-storage.fra1.digitaloceanspaces.com%2FFrame_5_bdb6d0aeb8.jpg&w=1920&q=75";
 
-const UserNavBar = ({usernamecard, name, image, username,}) => {
+const UserNavBar = ({account, usernamecard, name, image, username,}) => {
 console.log(usernamecard)
   const navigate = useNavigate();
   
@@ -28,8 +28,8 @@ console.log(usernamecard)
     <>
       <div className="mainSideBar">
         <div className="imageAndNameDic">
-          <img className="sideBarImage" src={Omar} alt="My Image" />
-          <p className="sideBarName">User {usernamecard}</p>
+          <img className="sideBarImage" src={account?.image} alt="My Image" />
+          <p className="sideBarName">User {account?.username}</p>
         </div>
 
         <div className="mainSelectorDiv">
