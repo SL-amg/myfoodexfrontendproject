@@ -5,14 +5,21 @@ import UserNavBar from "./UserNavBar";
 import CategoryList from "./CategoryList";
 import RecipyList from "./RecipyList";
 import IngredientList from "./IngredientList";
+import { getUserDetails } from "../api/users";
+import { useQuery } from "@tanstack/react-query";
 
 const MainUserPage = () => {
+  const { data, isFetching, isSuccess, refetch } = useQuery({
+    queryKey: ["users"],
+    queryFn: getUserDetails,
+  });
+
   return (
 
     <>
     <div className="fixmaindiv">
       <div>
-      <UserNavBar />
+      <UserNavBar usernamecard={data?.username}  />
       </div>
       <div>
       <CategoryList />

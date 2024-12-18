@@ -24,6 +24,13 @@ async function Login(userInfo) {
   return response;
 } // to check this page not working
 
+//to get user details
+async function getUserDetails() {
+  const data = await instance.get("/accounts/details");
+  console.log(data, "users")
+  return data;
+}
+
 //Catgoires Hub-----------------------------------------------------
 //to get catogaries from the server
 async function getAllCatogaries() {
@@ -51,4 +58,4 @@ async function getAllIngredients() {
 }
 
   export {
-    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers  };
+    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers, getUserDetails };

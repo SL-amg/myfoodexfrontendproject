@@ -8,7 +8,7 @@ function OneUserCard({ usernamecard, name, image, username, passwrod }) {
       <div className="userssDiv">
         <div className="userssAction">
           <div>
-            <p className="userssTextDiv">Name </p>
+            <p className="userssTextDiv">UserName </p>
             <h2 className="userssTextresaltsDiv">{usernamecard?.username} </h2>
           </div>
 

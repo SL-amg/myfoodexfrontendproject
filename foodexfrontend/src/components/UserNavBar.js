@@ -7,13 +7,14 @@ import { MdOutlineSettings } from "react-icons/md";
 import { IoLogOut } from "react-icons/io5";
 import { NavLink, useNavigate } from "react-router-dom";
 import { deleteToken } from "../api/storage";
+import OneUserCard from "./OneUserCard";
 
 
 const Omar = 
   "https://home.joincoded.com/_next/image?url=https%3A%2F%2Flanding-storage.fra1.digitaloceanspaces.com%2FFrame_5_bdb6d0aeb8.jpg&w=1920&q=75";
 
-const UserNavBar = () => {
-
+const UserNavBar = ({usernamecard, name, image, username,}) => {
+console.log(usernamecard)
   const navigate = useNavigate();
   
   const logout = () => {
@@ -28,7 +29,7 @@ const UserNavBar = () => {
       <div className="mainSideBar">
         <div className="imageAndNameDic">
           <img className="sideBarImage" src={Omar} alt="My Image" />
-          <p className="sideBarName">Name of user</p>
+          <p className="sideBarName">User {usernamecard}</p>
         </div>
 
         <div className="mainSelectorDiv">
