@@ -20,11 +20,16 @@ function OneRecipyCard({ recipycard, name, image, nutritionFact, creater, catego
         </div>
         <div>
           Recipy Creater is
-          {recipycard?.creater}
+          {recipycard?.creator}
         </div>
         <div>
           Recipy category is
           {recipycard?.category}
+        </div>
+        <div>
+        Recipy Ingredients are
+        <pre>{JSON.stringify(recipycard?.ingredients, null, 2)}</pre>;
+     
         </div>
 
       </div>

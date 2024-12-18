@@ -1,7 +1,7 @@
 import React from 'react'
 import "../components/CSS files/CategoryCard.css";
 
-function OneCategoryCard({ categorycard, name, image }) {
+function OneCategoryCard({ categorycard, name, image, recipes }) {
     return (
       <div className='catogaryOneItemDiv'>
         <div>
@@ -11,6 +11,10 @@ function OneCategoryCard({ categorycard, name, image }) {
         <div>
           category Image is
           <img src={"https://react-bank-project.eapi.joincoded.com/" + categorycard?.image}/>
+     
+        </div>
+        <div>
+        <pre>{JSON.stringify(categorycard?.recipes, null, 2)}</pre>;
      
         </div>
 
