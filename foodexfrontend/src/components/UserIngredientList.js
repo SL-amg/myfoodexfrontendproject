@@ -12,7 +12,7 @@ const UserIngredientList = () => {
     const [queryRecipy, setQueryRecipy] = useState("");
   
     const { data, isFetching, isSuccess, refetch } = useQuery({
-      queryKey: ["userIngredientList"],
+      queryKey: ["ingredients"],
       queryFn: getAllIngredients,
     });
 

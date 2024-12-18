@@ -3,15 +3,7 @@
 import React from "react";
 import "../components/CSS files/RecipyCard.css";
 
-function OneRecipyCard({
-  recipycard,
-  name,
-  image,
-  nutritionFact,
-  creater,
-  category,
-  ingredients,
-}) {
+function OneRecipyCard({ recipycard, ingredients }) {
   return (
     <div className="recipyDiv">
       <div className="recipyAction">
@@ -21,13 +13,7 @@ function OneRecipyCard({
         </div>
         <div>
           <p className="recipyTextDiv">Recipy Image is </p>
-          <img
-            className="recipyImage"
-            src={
-              "" +
-              recipycard?.image
-            }
-          />
+          <img className="recipyImage" src={"" + recipycard?.image} />
         </div>
 
         <div>
@@ -37,7 +23,7 @@ function OneRecipyCard({
 
         <div>
           <p className="recipyTextDiv">Recipy Creater is </p>
-          <h2 className="recipyTextresaltsDiv">{recipycard?.creator}</h2>
+          <h2 className="recipyTextresaltsDiv">{recipycard?.creator?.name}</h2>
         </div>
 
         <div>
@@ -47,7 +33,11 @@ function OneRecipyCard({
         <div>
           <p className="recipyTextDiv">Recipy Ingredients are</p>
           <div>
-            <ul>{ingredients?.map(ingredient=>(<li>{ingredient.name}</li>))}</ul>
+            <ul>
+              {ingredients?.map((ingredient) => (
+                <li>{ingredient.name}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

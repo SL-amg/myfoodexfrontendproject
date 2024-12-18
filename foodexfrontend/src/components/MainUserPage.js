@@ -13,13 +13,13 @@ const MainUserPage = () => {
     queryKey: ["users"],
     queryFn: getUserDetails,
   });
-
+//learnt from sultan to send picture to usernavbar send all data from get function in users
   return (
 
     <>
     <div className="fixmaindiv">
-      <div>
-      <UserNavBar account= {data} />
+      <div className="sticknavbar">
+      <UserNavBar className="sticknavbar" account= {data} /> 
       </div>
       <div>
       <CategoryList />

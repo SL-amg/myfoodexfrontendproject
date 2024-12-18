@@ -14,12 +14,13 @@ const UserRecipyList = () => {
   const [queryCategory, setQueryCategory] = useState("");
 
   const { data, isFetching, isSuccess, refetch } = useQuery({
-    queryKey: ["userRecipyList"],
+    queryKey: ["recipes"],
     queryFn: getAllRecipies,
   });
+  
   const userRecipyCardView = data?.filter((recipycard) => recipycard?.name.includes(queryName))
 // .filter((recipycard) => recipycard?.category.includes(queryCategory))
-.filter((recipycard) =>recipycard?.creator?.includes(queryCreator))
+.filter((recipycard) => recipycard?.creator?.name?.includes(queryCreator))
     .map((recipycard) => (
       <OneRecipyCard
         recipycard={recipycard}

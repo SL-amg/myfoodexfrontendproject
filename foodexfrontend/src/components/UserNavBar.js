@@ -22,14 +22,14 @@ console.log(usernamecard)
     localStorage.removeItem("token");
     navigate("/login");
   };
-
+// here we call the function account and request what we need
 
   return (
     <>
       <div className="mainSideBar">
         <div className="imageAndNameDic">
           <img className="sideBarImage" src={account?.image} alt="My Image" />
-          <p className="sideBarName">User {account?.username}</p>
+          <p className="sideBarName">{account?.username}</p>
         </div>
 
         <div className="mainSelectorDiv">
