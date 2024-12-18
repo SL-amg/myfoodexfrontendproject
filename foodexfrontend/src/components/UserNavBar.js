@@ -6,7 +6,7 @@ import { TbMeat } from "react-icons/tb";
 import { MdOutlineSettings } from "react-icons/md";
 import { IoLogOut } from "react-icons/io5";
 import { NavLink, useNavigate } from "react-router-dom";
-// import { deleteToken } from "../api/storage";
+import { deleteToken } from "../api/storage";
 
 
 const Omar = 
@@ -16,11 +16,11 @@ const UserNavBar = () => {
 
   const navigate = useNavigate();
   
-  // const logout = () => {
-  //   deleteToken();
-  //   localStorage.removeItem("user");
-  //   navigate("/login");
-  // };
+  const logout = () => {
+    deleteToken();
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
 
 
   return (
@@ -52,7 +52,7 @@ const UserNavBar = () => {
           </div>
           <div className="eachIetmDiv">
             <IoLogOut className="sideBarIcons" />
-            {/* <button className="" onClick={logout}> Logout</button> */}
+            <button className="" onClick={logout}> Logout</button>
           </div>
         </div>
       </div>

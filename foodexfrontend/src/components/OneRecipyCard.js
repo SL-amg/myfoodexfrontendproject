@@ -10,6 +10,7 @@ function OneRecipyCard({
   nutritionFact,
   creater,
   category,
+  ingredients,
 }) {
   return (
     <div className="recipyDiv">
@@ -46,7 +47,7 @@ function OneRecipyCard({
         <div>
           <p className="recipyTextDiv">Recipy Ingredients are</p>
           <div>
-            <pre>{JSON.stringify(recipycard?.ingredients, null, 2)}</pre>
+            <ul>{ingredients?.map(ingredient=>(<li>{ingredient.name}</li>))}</ul>
           </div>
         </div>
       </div>

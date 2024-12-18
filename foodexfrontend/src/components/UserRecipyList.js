@@ -17,10 +17,9 @@ const UserRecipyList = () => {
     queryKey: ["userRecipyList"],
     queryFn: getAllRecipies,
   });
-  const userRecipyCardView = data
-    ?.filter((recipycard) => recipycard?.name.includes(queryName))
-    // .filter((recipycard) => recipycard?.category.includes(queryCategory))
-    // .filter((recipycard) => JSON.stringify(recipycard?.creator).includes(queryCreator))
+  const userRecipyCardView = data?.filter((recipycard) => recipycard?.name.includes(queryName))
+// .filter((recipycard) => recipycard?.category.includes(queryCategory))
+.filter((recipycard) =>recipycard?.creator?.includes(queryCreator))
     .map((recipycard) => (
       <OneRecipyCard
         recipycard={recipycard}

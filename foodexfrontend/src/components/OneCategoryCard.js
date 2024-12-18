@@ -24,7 +24,7 @@ function OneCategoryCard({ categorycard, name, image, recipes }) {
         <div>
           <p className="catigoryTextDiv">Recipies:</p>
           <div>
-            <pre>{JSON.stringify(categorycard?.recipes, null, 2)}</pre>
+            <ul>{recipes.map(recipe=>(<li>{recipe.name}</li>))}</ul>
           </div>
         </div>
       </div>

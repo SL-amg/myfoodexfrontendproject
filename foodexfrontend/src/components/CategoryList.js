@@ -10,8 +10,9 @@ const CategoryList = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
     queryKey: ["categoryList"],
     queryFn: getAllCatogaries,
+  
   });
-
+console.log(data);
   const categoryCardView = data?.map((categorycard) => (
     <OneCategoryCard
       categorycard={categorycard}

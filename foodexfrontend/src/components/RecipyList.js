@@ -19,6 +19,7 @@ const RecipyList = () => {
       name={recipycard?.name}
       category={recipycard?.category}
       image={recipycard?.image}
+      ingredients={recipycard?.ingredients}
     />
   ));
 

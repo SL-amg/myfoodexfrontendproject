@@ -24,7 +24,7 @@ function OneIngredientCard({ ingredientcard, name, scale, amount, recipes }) {
 
         <div>
           <p className="integoryTextDiv"> igredient recipies is</p>
-          <h2 className="intgoryTextresaltsDiv">{ingredientcard?.recipes} </h2>
+          <ul>{recipes.map(recipe=>(<li>{recipe.name}</li>))}</ul>
         </div>
       </div>
     </div>
