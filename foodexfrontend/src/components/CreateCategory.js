@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { addCategory } from "../api/users";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useState } from "react";
-import Input from "./Input";
+import InputModified from "./InputModified";
 
 const CreateCategory = () => {
   const navigate = useNavigate();
@@ -32,13 +32,13 @@ const handleSubmit=()=>{
   return (
     <>
     <div className='centercreatediv'>
-    <Input
+    <InputModified
           name="Catigory Name"
           onChange={(e) => {
             setName(e.target.value);
           }}
         />
-        <Input
+        <InputModified
           name="Catigory Image Link"
           onChange={(e) => {
             setImage(e.target.value);

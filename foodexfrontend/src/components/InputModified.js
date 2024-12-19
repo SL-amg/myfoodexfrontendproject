@@ -1,7 +1,7 @@
 import React from "react";
-import "../components/CSS files/input.css";
+import "../components/CSS files/inputModified.css";
 
-const Input = ({ name, onChange }) => {
+const InputModified = ({ name, onChange }) => {
   return (
     <div className="" >
       <h1 className="inputregistertext">{name}</h1>
@@ -13,4 +13,4 @@ const Input = ({ name, onChange }) => {
   );
 };
 
-export default Input;
+export default InputModified;

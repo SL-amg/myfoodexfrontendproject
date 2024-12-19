@@ -82,18 +82,3 @@
 .inputtextrecipy {
   width: 500px;
 }
-
-input {
-  width: 500px;
-  height: 50px;
-  padding: 5px;
-  margin: 10px;
-
-}
-
-
-.centercreatediv{
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
- }

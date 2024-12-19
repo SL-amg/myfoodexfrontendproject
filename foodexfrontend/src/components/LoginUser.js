@@ -56,7 +56,7 @@ const LoginUser = () => {
                 placeholder="Password"
                 className="barStyle"
               />
-              <button className="" type="submit">
+              <button className="loginbuttonpage" type="submit">
                 Login
               </button>
             </Form>
