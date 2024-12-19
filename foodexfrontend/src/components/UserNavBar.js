@@ -35,21 +35,21 @@ console.log(usernamecard)
         <div className="mainSelectorDiv">
           <div className="eachIetmDiv">
             <BiSolidFoodMenu className="sideBarIcons" />
-            Catogires
+            <NavLink className="userLinkNavBarText" to="/categoriesList">Catgoires</NavLink>
           </div>
           <div className="eachIetmDiv">
             <GiKnifeFork className="sideBarIcons" />
-            Recipies
+            <NavLink className="userLinkNavBarText" to="/recipyList">Recipies</NavLink>
           </div>
           <div className="eachIetmDiv">
             <TbMeat className="sideBarIcons" />
-            Ingredents
+            <NavLink className="userLinkNavBarText" to="/recipyList">Ingredents</NavLink>
           </div>
         </div>
         <div className="mainAccountSideBar">
           <div className="eachIetmDiv">
             <MdOutlineSettings className="sideBarIcons" />
-            Account
+            <NavLink className="userLinkNavBarText" to="/profile">Account</NavLink>
           </div>
           <div className="eachIetmDiv">
             <IoLogOut className="sideBarIcons" />

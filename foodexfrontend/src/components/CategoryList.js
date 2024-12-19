@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getAllCatogaries } from "../api/users";
 import OneCategoryCard from "./OneCategoryCard";
 import "../components/CSS files/CategoryCard.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const CategoryList = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
@@ -23,7 +24,15 @@ console.log(data);
     />
   ));
 
-  return <div className="mainCategoryDiv">{categoryCardView}</div>;
+  return (
+  <>
+         <NavLink to="/createCategory">
+          <button className=""> Create Category</button>
+        </NavLink>
+    <div className="mainCategoryDiv">{categoryCardView}</div>;
+  </>
+  
+)
 };
 
 export default CategoryList;

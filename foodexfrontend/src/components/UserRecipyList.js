@@ -6,6 +6,7 @@ import { useState } from "react";
 import { getAllRecipies } from "../api/users";
 import OneRecipyCard from "./OneRecipyCard";
 import "../components/CSS files/RecipyCard.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const UserRecipyList = () => {
   const queryClient = useQueryClient();
@@ -35,6 +36,9 @@ const UserRecipyList = () => {
 
   return (
     <div className="transactionMainBackground">
+        <NavLink to="/createRecipy">
+          <button className=""> Create Recipy</button>
+        </NavLink>
       <div>
         <div className="serachDiv">
           <input
@@ -68,7 +72,7 @@ const UserRecipyList = () => {
         </div>
       </div>
 
-      <div className="resultView">{userRecipyCardView}</div>
+      <div className="mainRecipyDiv">{userRecipyCardView}</div>
     </div>
   );
 };

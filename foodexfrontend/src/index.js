@@ -19,6 +19,10 @@ import IngredientList from "./components/IngredientList";
 import UsernameList from "./components/UsernameList";
 import UserRecipyList from "./components/UserRecipyList";
 import UserIngredientList from "./components/UserIngredientList";
+import UserNavBar2 from "./components/UserNavBar2";
+import CreateCategory from "./components/CreateCategory";
+import CreateRecipy from "./components/CreateRecipy";
+import CreateIngredient from "./components/CreateIngredient";
 
 //-----------
 
@@ -68,6 +72,7 @@ const router = createBrowserRouter([
     path: "/categoriesList", // for testing
     element: (
       <>
+      <UserNavBar2/>
         <CategoryList />
         <Footer />
       </>
@@ -77,7 +82,8 @@ const router = createBrowserRouter([
     path: "/recipyList", // for testing
     element: (
       <>
-        <RecipyList />
+            <UserNavBar2/>
+        <UserRecipyList />
         <Footer />
       </>
     ),
@@ -86,7 +92,8 @@ const router = createBrowserRouter([
     path: "/ingredientList", // for testing
     element: (
       <>
-        <IngredientList />
+            <UserNavBar2/>
+        <UserIngredientList />
         <Footer />
       </>
     ),
@@ -95,25 +102,53 @@ const router = createBrowserRouter([
     path: "/allusers", // for testing
     element: (
       <>
+            <UserNavBar2/>
         <UsernameList />
         <Footer />
       </>
     ),
   },
+  // {
+  //   path: "/test1", // for testing
+  //   element: (
+  //     <>
+  //       <UserRecipyList />
+  //       <Footer />
+  //     </>
+  //   ),
+  // },
+  // {
+  //   path: "/test2", // for testing
+  //   element: (
+  //     <>
+  //       <UserIngredientList />
+  //       <Footer />
+  //     </>
+  //   ),
+  // },
   {
-    path: "/test1", // for testing
+    path: "/createCategory", // for testing
     element: (
       <>
-        <UserRecipyList />
+        <CreateCategory />
         <Footer />
       </>
     ),
   },
   {
-    path: "/test2", // for testing
+    path: "/createRecipy", // for testing
     element: (
       <>
-        <UserIngredientList />
+        <CreateRecipy />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/createIngredient", // for testing
+    element: (
+      <>
+        <CreateIngredient />
         <Footer />
       </>
     ),

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { getAllIngredients } from "../api/users"
 import OneIngredientCard from "./OneIngredientCard";
 import "../components/CSS files/IngredientCard.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const UserIngredientList = () => {
     const queryClient = useQueryClient();
@@ -32,6 +33,9 @@ const UserIngredientList = () => {
 
 return (
     <div className="transactionMainBackground">
+        <NavLink to="/createIngredient">
+          <button className=""> Create Ingredient</button>
+        </NavLink>
     <div>
       <div className="serachDiv">
         <input
@@ -65,7 +69,7 @@ return (
       </div>
     </div>
 
-    <div className="resultView">{userIngredientCardView}</div>
+    <div className="mainIngridentDiv">{userIngredientCardView}</div>
   </div>
 
 );

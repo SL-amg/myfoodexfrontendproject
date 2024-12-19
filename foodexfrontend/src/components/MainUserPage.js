@@ -7,12 +7,14 @@ import RecipyList from "./RecipyList";
 import IngredientList from "./IngredientList";
 import { getUserDetails } from "../api/users";
 import { useQuery } from "@tanstack/react-query";
+import UserCategoryList from "./CategoryList";
 
 const MainUserPage = () => {
   const { data, isFetching, isSuccess, refetch } = useQuery({
     queryKey: ["users"],
     queryFn: getUserDetails,
   });
+  
 //learnt from sultan to send picture to usernavbar send all data from get function in users
   return (
 

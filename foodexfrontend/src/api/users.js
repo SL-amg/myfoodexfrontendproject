@@ -39,6 +39,14 @@ async function getAllCatogaries() {
   return data;
 }
 
+//to create a new Catgory form server
+async function addCategory(formData) {
+  console.log(formData);
+  const response = await instance.post("/categories", formData);
+  console.log("addCategory", response);
+  return response.data;
+}
+
 //Recipies Hub -----------------------------------------------------
 //to get recipies from the server
 async function getAllRecipies() {
@@ -46,7 +54,12 @@ async function getAllRecipies() {
   console.log(data, "recipies")
   return data;
 }
-
+//to create a new Catgory form server
+async function addRecipe(recipyInfo) {
+  const response = await instance.post("/recipes", recipyInfo);
+  console.log("addRecipe", response);
+  return response;
+}
 
 //Ingredients Hub-----------------------------------------------------
 //to get all ingredients from the server
@@ -56,6 +69,12 @@ async function getAllIngredients() {
   console.log(data, "ingredients")
   return data;
 }
+//to create a new ingredient form server
+async function addIngredient(ingredientInfo) {
+  const response = await instance.post("/ingredients", ingredientInfo);
+  console.log("addIngredient", response);
+  return response;
+}
 
   export {
-    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers, getUserDetails };
+    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers, getUserDetails, addCategory, addRecipe, addIngredient };
