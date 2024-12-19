@@ -4,14 +4,16 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { addCategory } from "../api/users";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useState } from "react";
+import Input from "./Input";
 
 const CreateCategory = () => {
-
-
   const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [image, setImage] = useState("");
+
 
   const mutation = useMutation({
-    mutationFn: (formData) => addCategory(formData),
+    mutationFn: (newCatigoryData) => addCategory(newCatigoryData),
     onSuccess: () => {
       navigate("/categoriesList");
       const refreshPage = () => {
@@ -19,50 +21,32 @@ const CreateCategory = () => {
       }},
   });
 
-  function submit(values) {
-    console.log(values);
-    mutation.mutate(values);
-  }
+const handleSubmit=()=>{
+  mutation.mutate({
+    name: name,
+    image: image,
+  });
+};
+
 
   return (
     <>
     <div>
-            {/* Formik and rigister div*/}
-            <Formik
-              initialValues={{
-                name: "",
-                image: "",
-              }}
-              onSubmit={submit}
-            >
-              <Form>
-                <div>
-                  <div>
-                    <h4>Name</h4>
-                    <Field
-                      placeholder="name"
-                      className="barStyle"
-                      as="input"
-                      name="name"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <h4>Image</h4>
-                    <Field
-                      placeholder="image"
-                      className="barStyle"
-                      as="input"
-                      name="image"
-                      type="text"
-                    />
-                  </div>
-                  <button className="" type="submit">
-                    Create Catgoires
-                  </button>
-                </div>
-              </Form>
-            </Formik>
+    <Input
+          name="Catigory Name"
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+        <Input
+          name="Catigory Image Link"
+          onChange={(e) => {
+            setImage(e.target.value);
+          }} />
+        <button 
+       onClick={handleSubmit} >
+          Submit
+        </button>
    </div>
    </>
   )
