@@ -31,7 +31,7 @@ const handleSubmit=()=>{
 
   return (
     <>
-    <div>
+    <div className='centercreatediv'>
     <Input
           name="Catigory Name"
           onChange={(e) => {
@@ -43,7 +43,7 @@ const handleSubmit=()=>{
           onChange={(e) => {
             setImage(e.target.value);
           }} />
-        <button 
+        <button className="buttonCreateRecipy"
        onClick={handleSubmit} >
           Submit
         </button>

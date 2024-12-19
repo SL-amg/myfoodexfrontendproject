@@ -26,9 +26,13 @@ console.log(data);
 
   return (
   <>
-         <NavLink to="/createCategory">
-          <button className=""> Create Category</button>
+  <div className="centercreatButton">
+  <NavLink to="/createCategory">
+          <button className="buttoncreateCategory"> Create Category</button>
         </NavLink>
+
+  </div>
+
     <div className="mainCategoryDiv">{categoryCardView}</div>;
   </>
   

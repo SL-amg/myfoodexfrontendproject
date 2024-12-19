@@ -33,10 +33,14 @@ const UserIngredientList = () => {
 
 return (
     <div className="transactionMainBackground">
-        <NavLink to="/createIngredient">
-          <button className=""> Create Ingredient</button>
+      <div className="centeringreditenButton">
+      <NavLink to="/createIngredient">
+          <button className="buttonIngredietnCreate"> Create Ingredient</button>
         </NavLink>
-    <div>
+
+      </div>
+
+    <div className="centeringreditenButton">
       <div className="serachDiv">
         <input
           type="Search"

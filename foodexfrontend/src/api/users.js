@@ -31,6 +31,13 @@ async function getUserDetails() {
   return data;
 }
 
+//to update profile
+async function updateProfileUser() {
+  const data = await instance.put("/accounts/updateprofile");
+  console.log(data, "users")
+  return data;
+}
+
 //Catgoires Hub-----------------------------------------------------
 //to get catogaries from the server
 async function getAllCatogaries() {
@@ -77,4 +84,4 @@ async function addIngredient(ingredientInfo) {
 }
 
   export {
-    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers, getUserDetails, addCategory, addRecipe, addIngredient };
+    registerAccount, Login, getAllCatogaries, getAllIngredients, getAllRecipies, getAllUsers, getUserDetails, addCategory, addRecipe, addIngredient, updateProfileUser };

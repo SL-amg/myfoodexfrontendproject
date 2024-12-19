@@ -36,10 +36,14 @@ const UserRecipyList = () => {
 
   return (
     <div className="transactionMainBackground">
-        <NavLink to="/createRecipy">
-          <button className=""> Create Recipy</button>
+      <div className="centerrecipybutton">
+      <NavLink to="/createRecipy">
+          <button className="buttonCreateRecipy"> Create Recipy</button>
         </NavLink>
-      <div>
+
+      </div>
+
+      <div className="centerrecipybutton">
         <div className="serachDiv">
           <input
             type="Search"

@@ -24,6 +24,7 @@ import CreateCategory from "./components/CreateCategory";
 import CreateRecipy from "./components/CreateRecipy";
 import CreateIngredient from "./components/CreateIngredient";
 import Profile from "./components/Profile";
+import UpdateProfile from "./components/UpdateProfile";
 
 //-----------
 
@@ -163,6 +164,16 @@ const router = createBrowserRouter([
       <>
       <UserNavBar2/>
         <Profile />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/updateprofile", // for testing
+    element: (
+      <>
+      <UserNavBar2/>
+        <UpdateProfile />
         <Footer />
       </>
     ),

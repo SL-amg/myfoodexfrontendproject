@@ -35,7 +35,7 @@ const handleSubmit=()=>{
 
   return (
     <>
-    <div>
+    <div className='centeringreditendiv'>
     <Input
           name="Ingredient Name"
           onChange={(e) => {
@@ -57,7 +57,7 @@ const handleSubmit=()=>{
           onChange={(e) => {
             setAmount(e.target.value);
           }} />
-        <button 
+        <button  className='buttonIngredietnCreate'
        onClick={handleSubmit} >
           Submit
         </button>

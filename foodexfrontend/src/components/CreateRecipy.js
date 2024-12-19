@@ -5,6 +5,7 @@ import { addRecipe } from "../api/users";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import Input from "./Input";
+import "../components/CSS files/RecipyCard.css";
 
 const CreateRecipy = () => {
 
@@ -33,7 +34,7 @@ const handleSubmit=()=>{
 
   return (
    <>
-    <div>
+    <div className='centercreatediv'>
     <Input
           name="Recipy Name"
           onChange={(e) => {
@@ -45,12 +46,12 @@ const handleSubmit=()=>{
           onChange={(e) => {
             setImage(e.target.value);
           }} />
-           <Input
+           <Input className="inputtextsize"
           name="Nutrition Fact"
           onChange={(e) => {
             setNutritionFact(e.target.value);
           }} />
-        <button 
+        <button className="buttonCreateRecipy"
        onClick={handleSubmit} >
           Submit
         </button>
