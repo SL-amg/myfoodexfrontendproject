@@ -23,6 +23,7 @@ import UserNavBar2 from "./components/UserNavBar2";
 import CreateCategory from "./components/CreateCategory";
 import CreateRecipy from "./components/CreateRecipy";
 import CreateIngredient from "./components/CreateIngredient";
+import Profile from "./components/Profile";
 
 //-----------
 
@@ -130,6 +131,7 @@ const router = createBrowserRouter([
     path: "/createCategory", // for testing
     element: (
       <>
+      <UserNavBar2/>
         <CreateCategory />
         <Footer />
       </>
@@ -139,6 +141,7 @@ const router = createBrowserRouter([
     path: "/createRecipy", // for testing
     element: (
       <>
+      <UserNavBar2/>
         <CreateRecipy />
         <Footer />
       </>
@@ -148,7 +151,18 @@ const router = createBrowserRouter([
     path: "/createIngredient", // for testing
     element: (
       <>
+      <UserNavBar2/>
         <CreateIngredient />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/profile", // for testing
+    element: (
+      <>
+      <UserNavBar2/>
+        <Profile />
         <Footer />
       </>
     ),

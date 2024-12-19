@@ -30,7 +30,7 @@ const UserNavBar2 = () => {
         <NavLink to="/ingredientList">
           <button className=""> Ingredents</button>
         </NavLink>
-        <NavLink to="/Login">
+        <NavLink to="/profile">
           <button className=""> Profile</button>
         </NavLink>
         <button className="" onClick={logout}> Logout</button>

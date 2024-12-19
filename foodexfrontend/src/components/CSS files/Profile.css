@@ -1,0 +1,29 @@
+.profileBackground {
+    background-color: #e0e1dd;
+    height: 650px;
+  }
+  
+  .centerProfile {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profileAction {
+    border: none;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+  }
+  
+  
+  .profileWelcome {
+    font-size: 50px;
+    color: #1b263b;
+  }
+  
