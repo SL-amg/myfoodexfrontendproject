@@ -7,6 +7,7 @@ import Kuwaitipic from "/Users/slamg/Desktop/Development/myfoodexfrontendproject
 import HomeCategoryList from "./HomeCategoryList";
 import FollowUsAndJoin from "./FollowUsAndJoin";
 import LoyalCustomers from "./LoyalCustomers";
+import {Link} from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -28,9 +29,11 @@ const Home = () => {
         {/* View Recipies Page Sample Div */}
         <HomeCategoryList />
         <div className="centerViewRecipiesSample">
+          <Link to="/Register">
           <button class="button-name" role="button">
             View Recipies
           </button>
+          </Link>
         </div>
 
         {/* Follow us Div */}

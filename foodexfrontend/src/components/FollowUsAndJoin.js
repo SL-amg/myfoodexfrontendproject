@@ -3,6 +3,7 @@ import "../components/CSS files/FollowUsAndJoin.css";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 const FollowUsAndJoin = () => {
   return (
@@ -10,9 +11,15 @@ const FollowUsAndJoin = () => {
       <div className="followusDivmain">
         <div className="socialMediaDiv">
           <h3 className="playwrite-cz-Follow">Follow Us</h3>
+          <Link to="https://x.com/joincoded">
           <RiTwitterXFill className="socialMediaIcons" />
+          </Link>
+          <Link to="https://www.instagram.com/joincoded/?hl=en">
           <FaInstagram className="socialMediaIcons" />
+          </Link>
+          <Link to="https://www.facebook.com/joincoded/">
           <FaFacebookSquare className="socialMediaIcons" />
+          </Link>
         </div>
 
         <div className="mainSubscribeDiv">
