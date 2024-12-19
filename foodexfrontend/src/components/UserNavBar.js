@@ -43,7 +43,7 @@ console.log(usernamecard)
           </div>
           <div className="eachIetmDiv">
             <TbMeat className="sideBarIcons" />
-            <NavLink className="userLinkNavBarText" to="/recipyList">Ingredents</NavLink>
+            <NavLink className="userLinkNavBarText" to="/ingredientList">Ingredents</NavLink>
           </div>
         </div>
         <div className="mainAccountSideBar">
@@ -53,7 +53,7 @@ console.log(usernamecard)
           </div>
           <div className="eachIetmDiv">
             <IoLogOut className="sideBarIcons" />
-            <button className="" onClick={logout}> Logout</button>
+            <button className="buttonLogout" onClick={logout}> Logout</button>
           </div>
         </div>
       </div>

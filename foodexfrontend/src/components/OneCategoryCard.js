@@ -13,7 +13,7 @@ function OneCategoryCard({ categorycard, name, image, recipes }) {
         <div>
           {/* <p className="catigoryTextDiv">category Image is </p> */}
           <img
-            className="recipyImage"
+            className="catigoryImage"
             src={
               "" +
               categorycard?.image

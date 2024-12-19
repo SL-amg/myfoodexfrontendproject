@@ -44,7 +44,7 @@ return (
       <div className="serachDiv">
         <input
           type="Search"
-          className="line"
+          className="searchbardivingree"
           placeholder="Search By Name of Ingredient"
           aria-label="Search"
           aria-describedby="search-addon"
@@ -54,7 +54,7 @@ return (
       <div className="serachDiv">
         <input
           type="Search"
-          className="line"
+          className="searchbardivingree"
           placeholder="Search By Scale"
           aria-label="Search"
           aria-describedby="search-addon"
@@ -64,7 +64,7 @@ return (
       <div className="serachDiv">
         <input
           type="Search"
-          className="line"
+          className="searchbardivingree"
           placeholder="Search By Recipy"
           aria-label="Search"
           aria-describedby="search-addon"

@@ -4,11 +4,12 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 25%;
+
 }
 
 .recipyAction {
   border: 2px;
-  background: white;
+  background: #ffffff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   width: 300px;
@@ -22,19 +23,20 @@
 
 .recipyTextDiv{
   font-size: 25px;
-  color: #415a77;
+  color: #2B2D42;
+  font-weight: 500;
 }
 
 .recipyTextresaltsDiv{
   font-size: 25px;
-  color: #0a7732;
+  color: #8E0118;
 }
 
 .recipyImage{
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 140px;
+  height:120px;
   border-radius: 15px;
 }
 
@@ -43,6 +45,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #ffffff;
  
  }
 
@@ -83,5 +86,12 @@
   box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
   transform: translateY(5px);
   transition: 200ms;
+}
+
+.searchbardivrecipy{
+  margin: 20px;
+  width: 350px;
+  height: 25px;
+
 }
 

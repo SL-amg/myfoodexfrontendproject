@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../images/logo.jpeg";
-import "../components/CSS files/NavBar.css";
+import "../components/CSS files/UserNavBar.css"
 import { deleteToken } from "../api/storage";
 import { NavLink, useNavigate } from "react-router-dom";
 
@@ -19,21 +19,21 @@ const UserNavBar2 = () => {
       </div>
       <nav>
         <NavLink to="/main">
-          <button className=""> Main</button>
+          <button className="buttonNavBar2"> Main</button>
         </NavLink>
         <NavLink to="/categoriesList">
-          <button className=""> Catgoires</button>
+          <button className="buttonNavBar2"> Catgoires</button>
         </NavLink>
         <NavLink to="/recipyList">
-          <button className=""> Recipies</button>
+          <button className="buttonNavBar2"> Recipies</button>
         </NavLink>
         <NavLink to="/ingredientList">
-          <button className=""> Ingredents</button>
+          <button className="buttonNavBar2"> Ingredents</button>
         </NavLink>
         <NavLink to="/profile">
-          <button className=""> Profile</button>
+          <button className="buttonNavBar2"> Profile</button>
         </NavLink>
-        <button className="" onClick={logout}> Logout</button>
+        <button className="buttonNavBar2" onClick={logout}> Logout</button>
       </nav>
     </div>
   );

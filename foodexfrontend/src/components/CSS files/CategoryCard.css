@@ -27,15 +27,15 @@
 
 .catigoryTextresaltsDiv{
   font-size: 25px;
-  color: #320a77;
+  color: #2B2D42;
 }
 
-.recipyImage{
+.catigoryImage{
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
-  border-radius: 15px;
+  width: 140px;
+  height:120px;
+  border-radius: 20px;
 }
 
 

@@ -47,7 +47,7 @@ const UserRecipyList = () => {
         <div className="serachDiv">
           <input
             type="Search"
-            className="line"
+            className="searchbardivrecipy"
             placeholder="Search By Name of Recipy"
             aria-label="Search"
             aria-describedby="search-addon"
@@ -57,7 +57,7 @@ const UserRecipyList = () => {
         <div className="serachDiv">
           <input
             type="Search"
-            className="line"
+            className="searchbardivrecipy"
             placeholder="Search By Creator"
             aria-label="Search"
             aria-describedby="search-addon"
@@ -67,7 +67,7 @@ const UserRecipyList = () => {
         <div className="serachDiv">
           <input
             type="Search"
-            className="line"
+            className="searchbardivrecipy"
             placeholder="Search By Catigory"
             aria-label="Search"
             aria-describedby="search-addon"
