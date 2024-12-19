@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/tbkbank.png";
+import image from "../images/logo.jpeg";
 import "../components/CSS files/NavBar.css";
 import { deleteToken } from "../api/storage";
 import { NavLink, useNavigate } from "react-router-dom";

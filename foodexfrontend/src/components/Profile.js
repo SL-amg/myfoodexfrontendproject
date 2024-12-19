@@ -21,8 +21,10 @@ const Profile = () => {
           </div>
 
           <div>
-            <h2>Profile image:</h2>
-            <h2>{data?.image}</h2>
+            <img
+            className="recipyImage"
+            src={data?.image}
+             />
           </div>
           <div className="balanceMainDiv">
             <h2>UserName:</h2>

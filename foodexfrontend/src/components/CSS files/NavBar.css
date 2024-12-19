@@ -1,4 +1,7 @@
 /* NavBar css with Logo */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 .navBar {
     justify-content: space-between;
     display: flex;
@@ -8,9 +11,20 @@
     padding-left: 20px;
   }
   
+  .roboto-condensed-siteName {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+ 
+
   .site-logo {
-    height: 150px;
+    height: 125px;
     pointer-events: none;
+    padding: 10px;
+    border-radius: 25%;
   }
   
   .siteName {
