@@ -1,5 +1,5 @@
 .profileBackground {
-    background-color: #e0e1dd;
+    background-color: #2B2D42;
     height: 650px;
   }
   
@@ -25,5 +25,10 @@
   .profileWelcome {
     font-size: 50px;
     color: #1b263b;
+  }
+
+  .profileNamediv{
+    color: #8E0118;
+    font-size: 25px;
   }
   

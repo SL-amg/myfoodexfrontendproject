@@ -17,7 +17,7 @@ const Profile = () => {
         <div className="profileAction" >
           <div>
             <h1 className="profileWelcome">Welcome</h1>
-            <h2 className="welcomeName">{data?.name}</h2>
+            <h2 className="profileNamediv">{data?.name}</h2>
           </div>
 
           <div>
@@ -29,7 +29,7 @@ const Profile = () => {
           <div className="balanceMainDiv">
             <h2>UserName:</h2>
             <div className="balanceDiv">
-              <h2 className="welcomeBalance">{data?.username} </h2>
+              <h2 className="profileNamediv">{data?.username} </h2>
             </div>
           </div>
         </div>
