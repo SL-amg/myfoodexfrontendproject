@@ -4,21 +4,34 @@ import { useMutation } from "@tanstack/react-query";
 import { Formik, Form, Field } from "formik";
 import { NavLink, useNavigate } from "react-router-dom";
 import { registerAccount } from "../api/users";
+import { useState } from "react";
+import Input from "./Input";
 
 const RegisterUser = () => {
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
+  const [image, setImage] = useState("");
+  const [password, setPassword] = useState("");
 
   const mutation = useMutation({
     mutationFn: (newUser) => registerAccount(newUser),
     onSuccess: () => {
-      navigate("/main"); //to change to main later
-    },
+      navigate("/login");
+      const refreshPage = () => {
+          navigate(0);
+      }},
   });
 
-  function submit(values) {
-    console.log(values);
-    mutation.mutate(values);
-  }
+  const handleSubmit=()=>{
+    mutation.mutate({
+      name: name,
+      image: image,
+      username: username,
+      password: password,
+    });
+  };
+
   return (
     <>
       <div className="mainDivRegister">
@@ -33,65 +46,34 @@ const RegisterUser = () => {
           </div>
           <div>
             {/* Formik and rigister div*/}
-            <Formik
-              initialValues={{
-                username: "",
-                name: "",
-                image: "",
-                password: "",
-              }}
-              onSubmit={submit}
-            >
-              <Form>
-                <div>
-                  <div>
-                    <h4>UserName</h4>
-                    <Field
-                      placeholder="username"
-                      className="barStyle"
-                      as="input"
-                      name="username"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <h4>Name</h4>
-                    <Field
-                      placeholder="Name"
-                      className="barStyle"
-                      as="input"
-                      name="name"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <h4>Image</h4>
-                    <Field
-                      placeholder="Image Url"
-                      className="barStyle"
-                      as="input"
-                      name="image"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <h4>Password</h4>
-                    <Field
-                      placeholder="Password"
-                      className="barStyle"
-                      as="input"
-                      name="password"
-                      type="password"
-                    />
-                  </div>
-
-                  <button className="" type="submit">
-                    Register
-                  </button>
+            <Input
+          name="User Name"
+          onChange={(e) => {
+            setUsername(e.target.value);
+          }}
+        />
+         <Input
+          name="Name"
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+        <Input
+          name="Profile Image Link"
+          onChange={(e) => {
+            setImage(e.target.value);
+          }} />
+           <Input
+          name="Password"
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }} />
+        <button 
+       onClick={handleSubmit} >
+          Register
+        </button>
                 </div>
-              </Form>
-            </Formik>
-          </div>
+            
         </div>
       </div>
     </>
